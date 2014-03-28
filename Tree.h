@@ -6,11 +6,13 @@ typedef listsVector::iterator branchIter ;
 class Tree
 {
 private:
-	listsVector senior_branch , younger_branch ;
-	int size_of_list , l ;
-	elementsVector get_elementsVector( int size ) ;
+	listsVector branch ;
+	
 public:
-	Tree( int size_of_listT , int size_of_vector , int log_of_num_list , int lT ) ;
+	
+	Tree( int size_of_listT , int size_of_vector , int log_of_num_list ) ;
+	void init_first_level( int low_line_items_tmp ) ;
+	List get_root() ;
 	~Tree(void) ;
 };
 

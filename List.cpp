@@ -7,6 +7,7 @@ List::List( int size_of_list , int size_of_vector )
 	for( listIter iter = subleaf.begin() ; iter != subleaf.end() ; iter++ )
 		iter->resize( size_of_vector ) ;
 
+
 }
 void List::to_fill()
 {
